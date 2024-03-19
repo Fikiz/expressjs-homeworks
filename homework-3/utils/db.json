@@ -1,0 +1,11 @@
+[
+  {
+    "id": "1",
+    "firstName": "New",
+    "lastName": "Trainer",
+    "email": "new.trainer@example.com",
+    "isCurrentlyTeaching": true,
+    "timeEmployed": "3 months",
+    "coursesFinishedCount": 2
+  }
+]

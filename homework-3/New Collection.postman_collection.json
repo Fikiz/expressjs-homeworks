@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "5827a728-b5cc-48cc-8cef-c5b37b52cf3d",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33509632"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/trainers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"3\",\r\n    \"firstName\": \"Filip\",\r\n    \"lastName\": \"Trainer\",\r\n    \"email\": \"filip.trainer@example.com\",\r\n    \"isCurrentlyTeaching\": true,\r\n    \"timeEmployed\": \"3 months\",\r\n    \"coursesFinishedCount\": 2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/trainers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"trainers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/trainers Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"4\",\r\n    \"firstName\": \"Filizzzzz\",\r\n    \"lastName\": \"Trainer\",\r\n    \"email\": \"filip.trainer@example.com\",\r\n    \"isCurrentlyTeaching\": true,\r\n    \"timeEmployed\": \"3 months\",\r\n    \"coursesFinishedCount\": 2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/trainers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"trainers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/trainers/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"UpdatedFirstName\",\r\n    \"lastName\": \"UpdatedLastName\",\r\n    \"email\": \"updated.email@example.com\",\r\n    \"isCurrentlyTeaching\": true,\r\n    \"timeEmployed\": \"6 months\",\r\n    \"coursesFinishedCount\": 10\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/trainers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"trainers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/trainers/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/trainers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"trainers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/trainers/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"1\",\r\n    \"firstName\": \"New\",\r\n    \"lastName\": \"Trainer\",\r\n    \"email\": \"new.trainer@example.com\",\r\n    \"isCurrentlyTeaching\": true,\r\n    \"timeEmployed\": \"3 months\",\r\n    \"coursesFinishedCount\": 2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/trainers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"trainers",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
