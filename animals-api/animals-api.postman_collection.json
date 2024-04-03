@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "8d6c049d-9bd0-467d-ba50-bf300db445b3",
+		"name": "animals-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33969709"
+	},
+	"item": [
+		{
+			"name": "Get All Animals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/animal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"animal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Animal by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/animal/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"animal",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "660d92275f2f65b20126fb3e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Animal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Roki\",\r\n    \"type\": \"dog\",\r\n    \"breed\": \"Retriver\",\r\n    \"age\": 10,\r\n    \"status\": \"Available\",\r\n    \"description\": \"Strong dog\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/animal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"animal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Animal",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Ronaldo\",\r\n    \"breed\":\"Chiwawa\",\r\n    \"age\":2,\r\n    \"status\":\"Adopted\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/animal/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"animal",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "660d9464f7fe2ad720bb99a4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Animal",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/animal/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"animal",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "660d95d022e42c40500bc96c"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
